@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: cadetblue; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
 }
-
-.App-link {
-  color: #61dafb;
+.title{
+  padding: 60px;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-size: 3rem;
 }
+.renderedQuoteCard{
+  margin:60px;
+}
+.quoteauthor{
+  margin:20px;
+  padding:15px;
+  height:150px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+justify-content: space-around;
+  border:3px solid grey;
+  color: aliceblue;
+  font-size: 1.2rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.SearchBarandQuoteComp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.author{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.searchBar{
+  height:60px;
+  width:300px;
+  border-radius: 30px;
+  border-color: 4px solid black;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: antiquewhite;
+}
+.paginationButtons{
+  width:80%;
+  height:40px;
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  margin-top: 100px;
+
+}
+.paginationButtons a {
+  padding:10px;
+  margin:5px;
+  border-radius: 5px;
+  border: 2px solid aliceblue;
+  color:aliceblue;
+  cursor: pointer;
+}
+.paginationButtons a:hover{
+  color: #000;
+  background-color: aliceblue;
+}
+.paginationActive a {
+   color:white;
+   background-color: green;
 }
